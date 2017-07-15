@@ -1,0 +1,131 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/*
+ *= require_self
+ */
+
+body {
+	background-color:#4BA2F2;
+	font-family: "Helvetica";
+	font-weight: 100;
+
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 100;
+}
+
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+.error{
+	margin-left:5px;
+	color:red;
+}
+.simple_form{
+	margin: 0 auto;
+	width:600px;
+	.new_post{
+
+	}	
+	.button{
+	  background: #76B3FA;
+	  border-radius: 5px;
+	  padding: 5px 20px;
+	  color: #fff;
+	  text-decoration: none;
+	  font-size: 1.45em;
+	  margin: 0 15px;
+	  border: 0px;
+	}
+	label{
+		font-size:25px;
+		margin-right:5px
+	}
+}
+
+
+
+.button {
+  background: #76B3FA;
+  border-radius: 5px;
+  padding: 5px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.45em;
+  margin: 0 15px;
+}
+
+/* Hover state animation applied here */
+.button:hover { 
+  -webkit-animation: hover 1200ms linear 2 alternate;
+    animation: hover 1200ms linear 2 alternate;
+    color:#1A5099;
+    text-decoration: none;
+
+}
+
+/* Active state animation applied here */
+.button:active {
+  -webkit-animation: active 1200ms ease 1 alternate;
+  animation: active 1200ms ease 1 alternate; 
+  background: #5F9BE0;
+}
+
+header {
+	width: 100%;
+	#logo {
+		float: left;
+		font-size: 24px;
+		padding: 15px 20px;
+		a {
+			text-decoration: none;
+			font-weight:bold;
+			color: #1A5099;
+		}
+	}
+	nav {
+		margin-top:15px;
+		margin-bottom:10px;
+		float: right;
+		a {
+			margin-left: 1.5rem;
+			line-height: 2;
+			color: #9B9B9B;
+			text-decoration: none;
+			&:hover {
+				color: #50A7C7;
+			}
+		}
+	}
+}
+
+@import 'home.css.scss';
+@import 'post.css.scss';
+

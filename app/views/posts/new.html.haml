@@ -1,0 +1,7 @@
+- if user_signed_in?
+	#intro
+		#posts
+		- if @posts.each.count == 3
+			%h2 You added too many posts. Delete some, to add a fresh one.
+		- else
+			= render 'form'

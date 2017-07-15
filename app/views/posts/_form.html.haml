@@ -1,0 +1,9 @@
+= simple_form_for @post do |f|
+	= f.error_notification
+	=f.label :Add, "Add new Post"
+	=f.input :title
+	%br
+	=f.input :link
+	%br
+	%p Notice: you can only add steemit.com post URL's
+	=f.button :submit

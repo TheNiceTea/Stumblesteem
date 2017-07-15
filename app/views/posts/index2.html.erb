@@ -1,0 +1,8 @@
+<% @posts.each do |post| %>
+	<h2><%= link_to post.title, post %></h2>
+	<%= post.link %><br>
+	<%= post.get_likes.size %> Upvotes
+<% end %>
+<br>
+
+<%= link_to "Add new post", new_post_path, class: "btn btn-primary"  %>

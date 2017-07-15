@@ -1,0 +1,29 @@
+- if user_signed_in?
+	#intro
+		#posts
+		- if @posts.each.count == 0
+			%h1 No posts yet? Add some!
+		- else
+			%h2 
+				Hey
+				= current_user.name
+				, check out your posts!
+			%br/
+			- @posts.each do |post|
+				.post
+					.post_content
+						.title
+							%p
+								%h2= "#{post.title} - #{post.link}"
+								= link_to "edit",edit_post_path(post)
+								= link_to "delete", post_path(post), method: :Delete, data: { confirm: "Are you sure?"}
+		- if @posts.each.count == 3
+			%h2 You added too many posts. Delete some, to add a fresh one.
+		- else
+			= link_to "Add post", new_post_path, class: "button"
+- else
+	#intro
+		=image_tag "steem_success.jpg"
+		%h1 Discover great content.
+		%span
+			Stumblesteem upon posts or sign-up to add your own!

@@ -1,0 +1,27 @@
+http://stumblesteem.com will be quite similar to the service stumbleupon.com, but exclusively for Steemit! Everyone can find new posts added to Stumblesteem and discover them randomly! With coming future versions, you guys will even be able to choose tags you like the most in Steemit, so the displayed posts will match way better to your personality.
+
+**For Nerds:** The whole project will be coded with my current favorite language choice : Ruby on Rails
+
+## Current logged in Screen
+[![Selection_041.png](https://steemitimages.com/DQmUrgp9u9J98Dc6ouPD9MmgHJhwYMNgSLy8YTmUNYomm2C/Selection_041.png)](https://steemitimages.com/DQmUrgp9u9J98Dc6ouPD9MmgHJhwYMNgSLy8YTmUNYomm2C/Selection_041.png)
+
+## Random Article, when pressing "Go!"
+[![Selection_040.png](https://steemitimages.com/DQmXM9g9bGLb5w9iPyhNVaGrPBBVb1nTSSZJDaBkBiWhWga/Selection_040.png)](https://steemitimages.com/DQmXM9g9bGLb5w9iPyhNVaGrPBBVb1nTSSZJDaBkBiWhWga/Selection_040.png)
+## Why
+
+Why not? Currently I am digging more and more into Steemit and the idea sounds pretty awesome to me! The main problem I see is that the content is really unstructured. There are lots of new posts every day and some users won't even have a good chance to come at the trending category anymore. With this project I'm trying to help new users as well as existing ones having a hard time getting their posts being found.
+
+## Working features
+- Login / Register
+- As registered user you can add your own posts
+- As guest / registered user, you can randomly find new content and upvote it
+
+## Todo
+- Displaying the random posts correctly.
+- Creating tags to get more personalized posts displayed.
+- Displaying view & hit statistics in the profile
+
+If there are any tips / suggestions from you guys, they are more than welcome! Just drop a comment below :-)
+
+
+^(https?:\/\/)(w{3})?.?(steemit)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?([\/][@][a-z\W\d]{2,32})([\/][a-z\W\d]{2,100})
